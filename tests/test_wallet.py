@@ -73,7 +73,6 @@ async def test_wallet_repository_create(
 async def test_get_wallets(session):
     repo = WalletRepository(session=session)
 
-    # Добавляем тестовые кошельки
     wallets = [
         Wallet(address="ADDR1", balance_trx=100.0, bandwith=500, energy=200),
         Wallet(address="ADDR2", balance_trx=50.0, bandwith=300, energy=150),
