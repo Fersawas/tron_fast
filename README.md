@@ -30,22 +30,13 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-
-### Установка зависимостей
-
-Активируйте виртуальное окружение
-
-```
-source venv/sqripts/activate
-```
-
 Применение миграций и первый запуск:
 
 ```
 alembic upgrade head
 ```
 
-### Запуск бота
+### Запуск проекта
 
 Запустите проект:
 
