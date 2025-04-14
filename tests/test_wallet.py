@@ -40,7 +40,7 @@ async def test_create_wallet():
         client = TestClient(app)
         wallet_data = {"address": "TVDPdZ8whQFqooSCDPwWL2yeLYrEnyEfax"}
 
-        response = client.post("tron/wallets", json=wallet_data)
+        response = client.post("tron/wallets/create", json=wallet_data)
 
         assert response.status_code == status.HTTP_200_OK
         response_data = response.json()

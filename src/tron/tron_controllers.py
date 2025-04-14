@@ -19,7 +19,7 @@ router = APIRouter(prefix="/tron", tags=["tron"])
 load_dotenv()
 
 
-@router.post("/wallets/")
+@router.post("/wallets/create")
 async def create_wallet(
     payload: WalletCreate,
     db_session: AsyncSession = Depends(db_helper.get_db_session),

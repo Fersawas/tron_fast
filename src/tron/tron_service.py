@@ -15,7 +15,6 @@ class WalletService:
         self.tron = AsyncTron(provider=self.provider)
 
     async def save_wallet(self, payload: WalletCreate):
-        print("CREATION")
         addres = payload.address
 
         balance_trx = await self.tron.get_account_balance(addres)
